@@ -13,7 +13,7 @@ string longest_palindromic_subsequence(const string& S) {
     }
     
     
-    for (int L = 2; L <= n; L++) {  // L is the length of substring
+    for (int L = 2; L <= n; L++) {
         for (int i = 0; i <= n-L; i++) {
             int j = i+L-1;
             if (S[i] == S[j]) {
@@ -35,4 +35,3 @@ int main() {
     cout << "Longest palindromic subsequence: "<<longest_palindromic_subsequence(S)<<endl;
     return 0;
 }
-
