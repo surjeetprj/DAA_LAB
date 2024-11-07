@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-string longestPalindromicSubsequence(const string& S) {
+string longest_palindromic_subsequence(const string& S) {
     int n = S.size();
     vector<vector<string>> dp(n, vector<string>(n, ""));
     
@@ -32,7 +32,7 @@ int main() {
     string S;
     cout<<"Enter your String....\n";
     cin>>S;
-    cout << "Longest palindromic subsequence: "<<longestPalindromicSubsequence(S)<<endl;
+    cout << "Longest palindromic subsequence: "<<longest_palindromic_subsequence(S)<<endl;
     return 0;
 }
 
